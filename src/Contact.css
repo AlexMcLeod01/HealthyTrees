@@ -1,0 +1,31 @@
+.FormOuter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TextItems {
+    margin: 5px;
+    width: 35ch;
+}
+
+.TextField {
+    height: 5em;
+    width: 35ch;
+    margin: 10px;
+}
+
+.Button {
+    background-color: #9b59b6;
+    color: #fefeff;
+    border-style: none;
+    border-radius: 3px;
+    width: 4.5em;
+    height: 1.8em;
+}
+
+.Button:hover {
+    background-color: #a971c0;
+    color: #fefeff;
+}

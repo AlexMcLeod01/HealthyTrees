@@ -1,0 +1,8 @@
+.hovering {
+    background-color: #9b59b6;
+    margin: auto;
+}
+
+.hovering:hover {
+    background-color: #a971c0
+}
