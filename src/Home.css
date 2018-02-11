@@ -43,7 +43,8 @@
 
 .BulletPoints {
     flex: 1;
-    text-align: center;
+    text-align: left;
+    padding-bottom: 30px;
 }
 
 .HowHeader {

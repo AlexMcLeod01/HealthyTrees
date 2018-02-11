@@ -8,12 +8,18 @@
 .TextItems {
     margin: 5px;
     width: 35ch;
+    border-style: solid;
+    border-color: #623475;
+    border-width: 2px;
 }
 
 .TextField {
     height: 5em;
     width: 35ch;
     margin: 10px;
+    border-style: solid;
+    border-color: #623475;
+    border-width: 2px;
 }
 
 .Button {

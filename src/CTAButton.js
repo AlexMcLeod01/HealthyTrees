@@ -8,7 +8,7 @@ class CTAButton extends Component {
             height: this.props.height,
             borderRadius: '5px',
             cursor: 'pointer',
-            fontSize: 'x-small',
+            fontSize: this.props.fsize,
             paddingTop: '5px'
         };
         

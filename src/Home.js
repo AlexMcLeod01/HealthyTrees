@@ -16,7 +16,7 @@ class Home extends Component {
                         <p>We handle everything for you, no experience needed. Our professional designer will work with you one on one to build you the perfect website to advertise your small business.</p>
                         <p><b>No hassles.</b></p>
                         <p>Only <s>$750</s> <b>$500</b> for the next 12 customers</p>
-                        <CTAButton width='80px' height='50px' text="Order Now For Discount"/>
+                        <CTAButton width='80px' height='50px' text="Order Now For Discount" fsize='x-small'/>
                     </div>
                 </div>
                 <div className='HomeContainer AlignItems'>
@@ -43,6 +43,7 @@ class Home extends Component {
                             <li>4 Revisions Per Month</li>
                             <li>48 Hr Revision Turnaround Guarantee</li>
                         </ul>
+                        <CTAButton width='80px' height='50px' text="Do Not Wait" fsize='medium'/>
                     </div>
                 </div>
                 <h3 className='HowHeader'>How Can We Charge So Much Less Than The Other Guys?</h3>
@@ -57,6 +58,7 @@ class Home extends Component {
                         <p>All these things combine to mean that we do not have to charge you upwards of $5000 for a simple business website.</p>
                         <p>It also means no surprise bills for lisence renewals for the premium Wordpress Theme you <b>did not</b> know you were using.</p>
                     </div>
+                    <CTAButton width='80px' height='50px' text="Order Now" fsize='medium'/>
                 </div>
             </div>
         );

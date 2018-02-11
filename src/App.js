@@ -12,9 +12,10 @@ class App extends Component {
     return (
       <Router>
         <div className='App'>
+        <NavBar/>
+        <div className='App2'>
+            <Header/>
             <div className='FooterGoesDown'>
-                <NavBar/>
-                <Header/>
                 <div className='Container'>
                     <Switch>
                         <Route exact={true} path='/' component={Home} />
@@ -24,6 +25,7 @@ class App extends Component {
                 </div>
             </div>
             <Footer/>
+        </div>
         </div>
       </Router>
     );
@@ -35,8 +37,8 @@ class NavBar extends Component {
         return (
             <div>
                 <ul className='Navbar'>
-                    <li className='Navbar-li lihover Nav-button'><Link to="/">ABOUT</Link></li>
-                    <li className='Navbar-li lihover Nav-button'><Link to="/">WORK</Link></li>
+                    <li className='Navbar-li lihover Nav-button'><Link to="/">WEBSITE</Link></li>
+                    <li className='Navbar-li lihover Nav-button'><Link to="/">WEBSITE</Link></li>
                     <li className='Navbar-li lihover Nav-button'><Link to="/Contact">CONTACT</Link></li>
                 </ul>
             </div>

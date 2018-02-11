@@ -17,6 +17,11 @@ body {
 .App {
     min-height: 100vh;
     width: 100%;
+}
+
+.App2 {
+    min-height: 100vh;
+    width: 100%;
     position: relative;
 }
 
@@ -29,6 +34,7 @@ body {
     background-color: #623475;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
         
 .Navbar-li {
@@ -121,6 +127,7 @@ li a:hover {
     /* Smaller header */
     .Container {
         padding-bottom: 30px;
+        padding-top: 30px;
         background-color: #fefeff;
     }
     
@@ -150,6 +157,7 @@ li a:hover {
     /* Smaller header */
     .Container {
         padding-bottom: 50px;
+        padding-top: 50px;
         background-color: #fefeff;
     }
     
