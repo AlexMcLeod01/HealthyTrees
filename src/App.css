@@ -12,6 +12,9 @@
     --alt-highlight-color: #FF9800;
     --alt-bg-color: #5D4037;
     --alt-white-color: #FBFEFC;
+    
+    --main-text: 'Montserrat Alternates', sans-serif;
+    --header-text: 'Kurale', serif;
 }
 html, body {
     height: 100%;
@@ -19,7 +22,7 @@ html, body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--main-text);
     text-align: center;
     line-height: 135%;
     color: var(--main-text-color);
@@ -113,7 +116,7 @@ li a:hover {
 
 /* Darkened header image with text overlay */
 .App-header {
-    background-image: linear-gradient(rgba(79,55,48,0.5), rgba(79,55,48,0.5)), url(./images/banyanroots.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/banyanroots.jpg);
     background-size: cover;
     width: 100%;
     color: var(--main-white-color);
@@ -129,10 +132,11 @@ li a:hover {
     .App-title {
         font-size: 40px;
         margin-top: 120px;
+        font-family: var(--header-text);
     }
 
     .App-subtitle {
-        transform: translate(0, -5px);
+        font-family: var(--header-text);
     }
     
     .FooterGoesDown {
@@ -167,10 +171,12 @@ li a:hover {
     .App-title {
         font-size: 20px;
         margin-top: 50px;
+        font-family: var(--header-text);
     }
 
     .App-subtitle {
         font-size: small;
+        font-family: var(--header-text);
     }
     
     /* Smaller header */
