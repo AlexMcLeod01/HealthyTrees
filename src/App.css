@@ -1,16 +1,28 @@
+:root {
+    /*Color palette for this project Green: #FBFEFC, #9AE8BB, #2ECC71, #229552, #020A06
+    Brown: #5D4037, #795548, #FF9800, #212121 */
+    --main-color: #2ECC71;
+    --main-text-color: #020A06;
+    --main-highlight-color: #9AE8BB;
+    --main-bg-color: #229552;
+    --main-white-color: #FBFEFC;
+    
+    --alt-color: #795548;
+    --alt-text-color: #212121;
+    --alt-highlight-color: #FF9800;
+    --alt-bg-color: #5D4037;
+    --alt-white-color: #FBFEFC;
+}
 html, body {
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     line-height: 135%;
-    color: #130a17;
-}
-
-body {
-    height: 100%;
+    color: var(--main-text-color);
 }
 
 /* Default stylings for the app */
@@ -30,16 +42,16 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #623475;
-    width: 100%;
+    background-color: var(--main-bg-color);
+    width: 100vw;
     position: fixed;
+    top: 0;
     z-index: 1;
 }
         
 .Navbar-li {
     float: left;
-    border-right: 1px solid #9b59b6;
+    border-right: 1px solid var(--main-color);
 }
 
 /* The size of the buttons changes on smaller screens */
@@ -47,19 +59,19 @@ body {
 @media (max-width: 700px) {
     li a {
         display: block;
-        color: #fefeff;
+        color: var(--main-white-color);
         text-align: center;
         padding: 4px 6px;
         text-decoration: none;
-        font-size: small;
+        font-size: x-small;
     }
     .Nav-button {
         display: block;
-        color: #fefeff;
+        color: var(--main-white-color);
         text-align: center;
         padding: 4px 6px;
         cursor: pointer;
-        font-size: small;
+        font-size: x-small;
     }
 
 }
@@ -68,14 +80,14 @@ body {
 @media (min-width: 701px) {
     li a {
         display: block;
-        color: #fefeff;
+        color: var(--main-white-color);
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
     }
     .Nav-button {
         display: block;
-        color: #fefeff;
+        color: var(--main-white-color);
         text-align: center;
         padding: 14px 16px;
         cursor: pointer;
@@ -83,37 +95,40 @@ body {
 }
 
 /*
-    Change the link color to #9b59b6 on hover
-    and #a971c0 on active
+    Change the link color to main-color on hover
+    and main-highlight-color on active
 */
 li a:hover {
-    background-color: #9b59b6;
+    background-color: var(--main-color);
 }
 
 .lihover:hover {
-    background-color: #9b59b6;
+    background-color: var(--main-color);
 }
 
 .active {
-    background-color: #a971c0;
+    background-color: var(--main-highlight-color);
 }
 /* End of Navbar section */
 
 /* Darkened header image with text overlay */
 .App-header {
-    background-image: linear-gradient(rgba(62,34,75,0.5), rgba(62,34,75,0.5)), url(./images/monitorbg.jpg);
+    background-image: linear-gradient(rgba(79,55,48,0.5), rgba(79,55,48,0.5)), url(./images/banyanroots.jpg);
     background-size: cover;
     width: 100%;
-    height: 200px;
-    padding: 20px;
-    color: #fefeff;
+    color: var(--main-white-color);
 }
 
 @media (min-width: 701px) {
+    .Header-size {
+        height: 250px;
+        padding: 20px;
+    }
+    
     /* The title of the webpage */
     .App-title {
         font-size: 40px;
-        margin-top: 100px;
+        margin-top: 120px;
     }
 
     .App-subtitle {
@@ -128,13 +143,13 @@ li a:hover {
     .Container {
         padding-bottom: 30px;
         padding-top: 30px;
-        background-color: #fefeff;
+        background-color: var(--main-white-color);
     }
     
     /* Footer styling */
     .App-footer {
-        background-color: #623475;
-        color: #fefeff;
+        background-color: var(--main-bg-color);
+        color: var(--main-white-color);
         height: 7em;
         width: 100%;
         padding-top: 1em;
@@ -143,15 +158,19 @@ li a:hover {
     }
 }
 @media (max-width: 700px) {
+    .Header-size {
+        height: 100px;
+        padding: 20px 10px;
+    }
+    
     /* The title of the webpage */
     .App-title {
         font-size: 20px;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .App-subtitle {
         font-size: small;
-        transform: translate(0, -5px);
     }
     
     /* Smaller header */
@@ -165,10 +184,11 @@ li a:hover {
     .App-footer {
         flex: 0;
         font-size: small;
-        background-color: #623475;
-        color: #fefeff;
-        width:100%;
-        padding: 20px;
-        padding-top: 30px;
+        background-color: var(--main-bg-color);
+        color: var(--main-white-color);
+        width:100vw;
+        padding: 30px 10px;
+        position: absolute;
+        bottom: 0;
     }
 }

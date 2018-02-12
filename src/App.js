@@ -7,7 +7,6 @@ import Contact from './Contact.js';
 //import CTAButton from './CTAButton.js';
 
 class App extends Component {
-  //Color palette for this project #fefeff, #a971c0, #9b59b6, #623475, #130a17
   render() {
     return (
       <Router>
@@ -20,7 +19,6 @@ class App extends Component {
                     <Switch>
                         <Route exact={true} path='/' component={Home} />
                         <Route path='/Contact' component={Contact} />
-                        <Route path='/About' component={Home} />
                     </Switch>
                 </div>
             </div>
@@ -37,8 +35,9 @@ class NavBar extends Component {
         return (
             <div>
                 <ul className='Navbar'>
-                    <li className='Navbar-li lihover Nav-button'><Link to="/">WEBSITE</Link></li>
-                    <li className='Navbar-li lihover Nav-button'><Link to="/">WEBSITE</Link></li>
+                    <li className='Navbar-li lihover Nav-button'><Link to="/">HOME</Link></li>
+                    <li className='Navbar-li lihover Nav-button'><Link to="/">HELP TREES</Link></li>
+                    <li className='Navbar-li lihover Nav-button'><Link to="/">TREES HELP</Link></li>
                     <li className='Navbar-li lihover Nav-button'><Link to="/Contact">CONTACT</Link></li>
                 </ul>
             </div>
@@ -49,9 +48,9 @@ class NavBar extends Component {
 class Header extends Component {
     render() {
         return (
-            <header className='App-header'>
-                <h1 className='App-title'>Heart Lotus Web Design</h1>
-                <h3 className='App-subtitle'>Simple, Affordable, Effective</h3>
+            <header className='App-header Header-size'>
+                <h1 className='App-title'>Healthy Trees R Us</h1>
+                <h3 className='App-subtitle'>Trees Help Us, Let Us Help Them</h3>
             </header>
         );
     }
@@ -62,7 +61,7 @@ class Footer extends Component {
         return (
             <footer className='App-footer'>
                 <p>Designed and Developed by Heart Lotus Web</p>
-                <p>Content is &copy;Heart Lotus Web 2018 - All Rights Reserved</p>
+                <p>Content is &copy;HealthyTreesRUs.com 2018 - All Rights Reserved</p>
             </footer>
         );
     }
