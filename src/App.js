@@ -11,19 +11,19 @@ class App extends Component {
     return (
       <Router>
         <div className='App'>
-        <NavBar/>
-        <div className='App2'>
-            <Header/>
-            <div className='FooterGoesDown'>
-                <div className='Container'>
-                    <Switch>
-                        <Route exact={true} path='/' component={Home} />
-                        <Route path='/Contact' component={Contact} />
-                    </Switch>
+            <NavBar/>
+            <div className='App2'>
+                <Header/>
+                <div className='FooterGoesDown'>
+                    <div className='Container'>
+                        <Switch>
+                            <Route exact={true} path='/' component={Home} />
+                            <Route path='/Contact' component={Contact} />
+                        </Switch>
+                    </div>
                 </div>
+                <Footer/>
             </div>
-            <Footer/>
-        </div>
         </div>
       </Router>
     );
@@ -37,7 +37,7 @@ class NavBar extends Component {
                 <ul className='Navbar'>
                     <li className='Navbar-li lihover Nav-button'><Link to="/">HOME</Link></li>
                     <li className='Navbar-li lihover Nav-button'><Link to="/">HELP TREES</Link></li>
-                    <li className='Navbar-li lihover Nav-button'><Link to="/">TREES HELP</Link></li>
+                    <li className='Navbar-li lihover Nav-button'><Link to="/">TREES SPEAK</Link></li>
                     <li className='Navbar-li lihover Nav-button'><Link to="/Contact">CONTACT</Link></li>
                 </ul>
             </div>

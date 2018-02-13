@@ -64,7 +64,7 @@ html, body {
         display: block;
         color: var(--main-white-color);
         text-align: center;
-        padding: 4px 6px;
+        padding: 8px 12px;
         text-decoration: none;
         font-size: x-small;
     }
@@ -72,7 +72,6 @@ html, body {
         display: block;
         color: var(--main-white-color);
         text-align: center;
-        padding: 4px 6px;
         cursor: pointer;
         font-size: x-small;
     }
@@ -85,14 +84,13 @@ html, body {
         display: block;
         color: var(--main-white-color);
         text-align: center;
-        padding: 14px 16px;
+        padding: 28px 32px;
         text-decoration: none;
     }
     .Nav-button {
         display: block;
         color: var(--main-white-color);
         text-align: center;
-        padding: 14px 16px;
         cursor: pointer;
     }
 }
@@ -181,19 +179,19 @@ li a:hover {
     
     /* Smaller header */
     .Container {
-        padding-bottom: 50px;
-        padding-top: 50px;
+        padding-bottom: 150px;
+        padding-top: 30px;
         background-color: #fefeff;
     }
     
     /* Footer styling */
     .App-footer {
         flex: 0;
-        font-size: small;
+        font-size: x-small;
         background-color: var(--main-bg-color);
         color: var(--main-white-color);
-        width:100vw;
-        padding: 30px 10px;
+        width: 90vw;
+        padding: 20px 30px 20px 15px;
         position: absolute;
         bottom: 0;
     }

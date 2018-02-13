@@ -6,7 +6,8 @@ import './Home.css';
 class Home extends Component {
     render () {
         return (
-            <div>  
+            <div className="TextWrap TextCenter">
+                <p>Here is where a meditation to help the trees will go.</p>
             </div>
         );
     }

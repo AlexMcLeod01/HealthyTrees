@@ -9,3 +9,8 @@
 .TextWrap {
     max-width: 65ch;
 }
+
+.TextCenter {
+    text-align: center;
+    margin: auto;
+}
