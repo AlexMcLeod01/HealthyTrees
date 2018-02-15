@@ -9,7 +9,7 @@
     margin: 5px;
     width: 35ch;
     border-style: solid;
-    border-color: var(--main-bg-color);
+    border-color: var(--main-bg-color, #229552);
     border-width: 2px;
 }
 
@@ -18,13 +18,13 @@
     width: 35ch;
     margin: 10px;
     border-style: solid;
-    border-color: var(--main-bg-color);
+    border-color: var(--main-bg-color, #229552);
     border-width: 2px;
 }
 
 .Button {
-    background-color: var(--main-color);
-    color: var(--main-white-color);
+    background-color: var(--main-color, #2ECC71);
+    color: var(--main-white-color, #FBFEFC);
     border-style: none;
     border-radius: 3px;
     width: 4.5em;
@@ -32,6 +32,6 @@
 }
 
 .Button:hover {
-    background-color: var(--main-highlight-color);
-    color: var(--main-white-color);
+    background-color: var(--main-highlight-color, #9AE8BB);
+    color: var(--main-white-color, #FBFEFC);
 }

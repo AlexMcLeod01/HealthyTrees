@@ -22,10 +22,10 @@ html, body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    font-family: var(--main-text);
+    font-family: var(--main-text, 'Montserrat Alternates', sans-serif);
     text-align: center;
     line-height: 135%;
-    color: var(--main-text-color);
+    color: var(--main-text-color, #020A06);
 }
 
 /* Default stylings for the app */
@@ -45,7 +45,7 @@ html, body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: var(--main-bg-color);
+    background-color: var(--main-bg-color, #229552);
     width: 100vw;
     position: fixed;
     top: 0;
@@ -54,7 +54,7 @@ html, body {
         
 .Navbar-li {
     float: left;
-    border-right: 1px solid var(--main-color);
+    border-right: 1px solid var(--main-color, #2ECC71);
 }
 
 /* The size of the buttons changes on smaller screens */
@@ -62,7 +62,7 @@ html, body {
 @media (max-width: 700px) {
     li a {
         display: block;
-        color: var(--main-white-color);
+        color: var(--main-white-color, #FBFEFC);
         text-align: center;
         padding: 8px 12px;
         text-decoration: none;
@@ -70,7 +70,7 @@ html, body {
     }
     .Nav-button {
         display: block;
-        color: var(--main-white-color);
+        color: var(--main-white-color, #FBFEFC);
         text-align: center;
         cursor: pointer;
         font-size: x-small;
@@ -82,14 +82,14 @@ html, body {
 @media (min-width: 701px) {
     li a {
         display: block;
-        color: var(--main-white-color);
+        color: var(--main-white-color, #FBFEFC);
         text-align: center;
         padding: 28px 32px;
         text-decoration: none;
     }
     .Nav-button {
         display: block;
-        color: var(--main-white-color);
+        color: var(--main-white-color, #FBFEFC);
         text-align: center;
         cursor: pointer;
     }
@@ -100,15 +100,15 @@ html, body {
     and main-highlight-color on active
 */
 li a:hover {
-    background-color: var(--main-color);
+    background-color: var(--main-color, #2ECC71);
 }
 
 .lihover:hover {
-    background-color: var(--main-color);
+    background-color: var(--main-color, #2ECC71);
 }
 
 .active {
-    background-color: var(--main-highlight-color);
+    background-color: var(--main-highlight-color, #9AE8BB);
 }
 /* End of Navbar section */
 
@@ -117,7 +117,7 @@ li a:hover {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/banyanroots.jpg);
     background-size: cover;
     width: 100%;
-    color: var(--main-white-color);
+    color: var(--main-white-color, #FBFEFC);
 }
 
 @media (min-width: 701px) {
@@ -130,11 +130,11 @@ li a:hover {
     .App-title {
         font-size: 40px;
         margin-top: 120px;
-        font-family: var(--header-text);
+        font-family: var(--header-text, 'Kurale', serif);
     }
 
     .App-subtitle {
-        font-family: var(--header-text);
+        font-family: var(--header-text, 'Kurale', serif);
     }
     
     .FooterGoesDown {
@@ -146,13 +146,13 @@ li a:hover {
         width: 100%;
         padding-bottom: 30px;
         padding-top: 30px;
-        background-color: var(--main-white-color);
+        background-color: var(--main-white-color, #FBFEFC);
     }
     
     /* Footer styling */
     .App-footer {
-        background-color: var(--main-bg-color);
-        color: var(--main-white-color);
+        background-color: var(--main-bg-color, #229552);
+        color: var(--main-white-color, #FBFEFC);
         height: 7em;
         width: 100%;
         padding-top: 1em;
@@ -170,12 +170,12 @@ li a:hover {
     .App-title {
         font-size: 20px;
         margin-top: 50px;
-        font-family: var(--header-text);
+        font-family: var(--header-text, 'Kurale', serif);
     }
 
     .App-subtitle {
         font-size: small;
-        font-family: var(--header-text);
+        font-family: var(--header-text, 'Kurale', serif);
     }
     
     /* Smaller header */
@@ -189,8 +189,8 @@ li a:hover {
     .App-footer {
         flex: 0;
         font-size: x-small;
-        background-color: var(--main-bg-color);
-        color: var(--main-white-color);
+        background-color: var(--main-bg-color, #229552);
+        color: var(--main-white-color, #FBFEFC);
         width: 90vw;
         padding: 20px 30px 20px 15px;
         position: absolute;
