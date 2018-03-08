@@ -10,7 +10,7 @@ class Contact extends Component {
         return (
             <div>
                 <h3>Need To Ask Us A Question?</h3>
-                <form action="https://formspree.io/AlexMcLeod01@gmail.com"
+                <form action="https://formspree.io/HealthyTreesRUs@gmail.com"
       method="POST" className="FormOuter" id="contactform">
                     <input type="text" name="name" placeholder="Your name" className="TextItems"/>
                     <input type="text" name="_replyto" placeholder="Your email" className="TextItems"/>
