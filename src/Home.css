@@ -10,7 +10,24 @@
     max-width: 65ch;
 }
 
+.BodyCenter {
+    text-align: left;
+    margin: auto;
+}
+
 .TextCenter {
     text-align: center;
     margin: auto;
+}
+
+.TextRight {
+    text-align: right;
+}
+
+.Bullets {
+    list-style-image: url("images/treetiny.png");
+}
+
+.Highlights {
+    color: var(--alt-highlight-color, #FF9800);
 }

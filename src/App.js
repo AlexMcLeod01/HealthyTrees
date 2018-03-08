@@ -36,8 +36,6 @@ class NavBar extends Component {
             <div>
                 <ul className='Navbar'>
                     <li className='Navbar-li lihover Nav-button'><Link to="/">HOME</Link></li>
-                    <li className='Navbar-li lihover Nav-button'><Link to="/">HELP TREES</Link></li>
-                    <li className='Navbar-li lihover Nav-button'><Link to="/">TREES SPEAK</Link></li>
                     <li className='Navbar-li lihover Nav-button'><Link to="/Contact">CONTACT</Link></li>
                 </ul>
             </div>
